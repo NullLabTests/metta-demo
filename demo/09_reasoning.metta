@@ -1,7 +1,7 @@
 ;; ============================================================
-;; MeTTa Demo 04 — Logical Reasoning
+;; MeTTa Demo 09 — Logical Reasoning
 ;; ============================================================
-;; Demonstrates: deduction, family trees, predicate logic
+;; Demonstrates: syllogisms, family trees, recursive deduction
 ;; ============================================================
 
 ;; ─── Syllogism (Socrates) ─────────────────────────────────
@@ -44,17 +44,3 @@
 
 !(ancestor alice charlie)
 !(ancestor alice diana)
-
-;; ─── Predicate Logic ─────────────────────────────────────
-
-(: human (-> Symbol Bool))
-(: mortal (-> Symbol Bool))
-
-(= (human Socrates) True)
-(= (human Plato) True)
-(= (human Aristotle) True)
-
-(= (mortal $x) (human $x))
-
-!(mortal Socrates)
-!(mortal Plato)

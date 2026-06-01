@@ -1,10 +1,11 @@
 ;; ============================================================
-;; MeTTa Demo 06 — Spaces & Knowledge Isolation
+;; MeTTa Demo 09 — Spaces & Knowledge Isolation
 ;; ============================================================
-;; Demonstrates: multiple spaces, cross-space queries
+;; Demonstrates: multiple knowledge spaces, cross-condition
+;; queries, property joins
 ;; ============================================================
 
-;; ─── Knowledge in &self ─────────────────────────────────
+;; ─── Knowledge in &self ──────────────────────────────────
 
 (Isa Mars planet)
 (Isa Venus planet)
@@ -36,7 +37,7 @@
      (orbit $x $d))
   ($x orbits at $d AU))
 
-;; ─── Separate Facts (demonstrating isolation) ───────────
+;; ─── Property Categories ────────────────────────────────
 
 (Red is-a Color)
 (Yellow is-a Color)
